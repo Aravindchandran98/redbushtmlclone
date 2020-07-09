@@ -1,0 +1,621 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+
+/*[] {}*/
+body {
+  background-color: #eee;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+#headerBlock {
+  width: 100%;
+  position: fixed;
+  background: #d84f57;
+  z-index: 1;
+}
+
+#headerBlock .container {
+  display: flex;
+  width: 1100px;
+  margin: 0 auto;
+  height: 55px;
+  align-items: center;
+}
+
+#headerBlock .container .leftNav {
+  flex: 1;
+}
+
+#headerBlock .container .rightNav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.manageBookingDropDown ul li {
+  display: none;
+}
+
+.manageBookingDropDown > ul {
+  display: flex;
+}
+
+.manageBookingDropDown:hover ul li {
+  display: block;
+}
+
+/*slider block starts here*/
+
+#sliderBlock img {
+  width: 100%;
+  height: 450px;
+}
+/*----------leftt menu block----*/
+.leftNav section {
+  display: flex;
+}
+
+.leftNav ul,
+.rightNav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.leftNav ul li a,
+.rightNav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 14px;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.logo {
+  flex: 1;
+}
+
+.leftMenu {
+  flex: 8;
+}
+
+.logo a {
+  background-image: url(../images/logo.png);
+  width: 80px;
+  height: 48px;
+  display: flex;
+  text-indent: -150px;
+}
+
+.leftNav ul li a.active {
+  font-weight: 600;
+  border-bottom: 3px solid #fff;
+  transition: ease-in-out 0.6s;
+}
+
+.leftNav ul li a:hover {
+  color: #f9e7ea;
+}
+
+.fa-user-circle {
+  font-size: 35px;
+  font-weight: lighter;
+  line-height: 20px;
+}
+
+.fa-chevron-down {
+  margin: 0px 0px 0px 6px;
+}
+
+.after_user_circle {
+  margin: -24px 21px 0px 41px !important;
+  display: block;
+}
+
+#searchBusesBlock article {
+  display: flex;
+  height: 450px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 50px;
+}
+
+#sliderBlock {
+  background-image: url("../images/backgroundimage.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+/*-------Atttribute Selector----------*/
+input[type="date"] {
+  font-size: 10px;
+  padding: 11.5px 30px !important;
+  border-right: none !important;
+}
+
+#searchBusesBlock article input {
+  padding: 15px 28px 16px 40px !important;
+  border: none;
+  border-right: 1.3px solid #888;
+  box-sizing: border-box;
+}
+
+#searchBusesBlock article button {
+  height: 46px;
+  width: 144px;
+  box-sizing: border-box;
+  background-color: #d74f57;
+  border: none;
+  font-size: 14px;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.city_icon {
+  position: relative;
+}
+
+.city_icon i {
+  position: absolute;
+  top: -14px;
+  left: 6px;
+  font-size: 20px;
+}
+
+/*----------latestUpdateBlock-------*/
+#latestUpdateBlock {
+  display: flex;
+  justify-content: center;
+}
+
+#latestUpdateBlock article {
+  width: 530px;
+  height: 100px;
+  padding: 10px 20px 10px 20px;
+  box-sizing: border-box;
+  background-color: #fff5e5;
+  display: flex;
+  align-items: center;
+  margin-top: -40px;
+}
+
+#latestUpdateBlock article div:nth-child(1) {
+  flex: 2;
+  color: #d74f57;
+  font-size: 50px;
+}
+
+#latestUpdateBlock article div:nth-child(2) {
+  flex: 8;
+}
+
+#latestUpdateBlock article div:nth-child(3) {
+  flex: 3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 94px;
+}
+
+#latestUpdateBlock article h4 {
+  font-size: 15px;
+  margin: 0;
+  padding: 5px;
+}
+
+#latestUpdateBlock article p {
+  font-size: 12px;
+  margin: 0;
+  padding: 5px;
+  font-weight: lighter;
+}
+
+#latestUpdateBlock article button {
+  width: 130px;
+  height: 25px;
+  background: #d74f57;
+  color: #fff;
+  padding: 4px;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+}
+/*ontime css block starts  here*/
+#onTimeBlock > article {
+  width: 1100px;
+  border: 1px solid #cccccc;
+  background: #ffffff;
+  margin: 60px auto;
+  display: flex;
+  height: 340px;
+}
+
+.leftOnDiv {
+  flex: 1;
+}
+
+.leftOnDiv p {
+  background: url("../images/ic-shield-red-big.png");
+  height: 88px;
+  width: 88px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-indent: -999px;
+  margin: 20px;
+}
+.rightInsideHeader h1 {
+  font-size: 32px;
+  margin-bottom: -3px;
+  margin-top: 8px;
+}
+.rightOnDiv {
+  flex: 8;
+}
+
+.img3_hero,
+.img4_hero {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+
+.img3_hero {
+  background: url("../images/tip-icon.png");
+  padding: 10px;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img4_hero {
+  background: url("../images/otgText.png");
+  width: 156px;
+  height: 26px;
+}
+
+.rightInsideFooter {
+  display: flex;
+  margin: 10px;
+}
+
+.rightInsideFooter div {
+  flex: 1;
+}
+
+.rightInsideFooter div h2 {
+  font-size: 19px;
+  font-weight: bolder;
+  color: #1446a0;
+}
+
+.rightInsideFooter div h4 {
+  font-size: 14px;
+  color: #34495e;
+  font-weight: 700;
+}
+
+.rightInsideFooter div p {
+  font-size: 14px;
+  color: #34495e;
+  font-weight: 400;
+}
+/*ontime css block ends here*/
+/*trackMyBus css block starts here {}*/
+#trackMyBus article {
+  background-color: #e8ecef;
+  width: 1100px;
+  margin: 60px auto;
+  border: 0.5px solid #cccccc;
+  height: 500px;
+}
+
+.headerArea {
+  display: flex;
+  height: 330px;
+}
+
+.footerArea nav {
+  display: flex;
+}
+
+.trackMyBusIcon {
+  flex: 1;
+  background-image: url("../images/tmb_img.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  text-indent: -999px;
+}
+
+.trackMyBusContent {
+  flex: 1;
+  padding-top: 30px;
+  padding-left: 20px;
+  align-items: center;
+}
+
+.trackMyBusContent p {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.trackMyBusContent h1 {
+  font-size: 14px;
+  padding-top: 5px;
+  font-weight: 100;
+  padding-right: 76px;
+  height: 72px;
+  width: 440px;
+}
+
+.trackMyBusContent button {
+  height: 38px;
+  width: 115px;
+  background: #e8ecef;
+  color: #4c8fdb;
+  border: 1px solid #4c8fdb;
+  border-radius: 2px;
+}
+
+hr {
+  width: 940px;
+  margin-top: 10px;
+}
+
+.footerArea nav div {
+  padding: 9px 74px;
+  width: 270px;
+  text-align: center;
+}
+
+.footerArea nav span {
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.footerArea nav h3 {
+  font-size: 36px;
+  color: #da4d52;
+  margin: 0px 0px -10px 0px;
+  font-weight: 100;
+}
+
+.footerArea nav p {
+  font-weight: 100;
+  font-size: 16px;
+}
+/*trackMyBus css block ends here*/
+/*convenience css block starts here*/
+#convenience article {
+  background-color: #fff;
+  display: block;
+  width: 1100px;
+  margin: 60px auto;
+  height: 630px;
+  display: flex;
+}
+
+.leftContent {
+  padding: 0px 30px 30px 30px;
+  width: 458px;
+  margin: 65px 25px 178px 43px;
+}
+
+.rightImage img {
+  width: 426px;
+  height: 552px;
+  margin-left: 90px;
+  margin-top: 10px;
+}
+
+.leftContent h1 {
+  font-size: 30px;
+}
+.leftContent p {
+  font-size: 14px;
+  color: #8a8a8a;
+}
+
+.leftContent p span {
+  line-height: 26px;
+  word-spacing: 2px;
+  font-weight: lighter;
+}
+
+.phonecode {
+  width: 15%;
+  height: 23px;
+  float: left;
+  font-size: 16px;
+}
+.phonenumber {
+  width: 56%;
+  margin-left: -12px;
+  height: 23px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.phonecode i {
+  position: relative;
+  left: -30px;
+  font-size: 17px;
+}
+
+.leftContent button {
+  height: 30px;
+  width: 36%;
+  background-color: #d84e55;
+  color: #fff;
+  margin-bottom: 10px;
+  border: 1px;
+  font-size: 14px;
+}
+
+.leftContentIcons {
+  display: flex;
+}
+
+/*convenience css block ends here*/
+
+/*we promise block starts here*/
+#promiseBlock article {
+  width: 1100px;
+  margin: 0px auto;
+}
+
+#promiseBlock article > header {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#promiseBlock article > header p {
+  margin: 0;
+  padding: 0;
+}
+
+#promiseBlock article > header p img {
+  height: 100px;
+}
+
+#promiseBlock article > header h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px 0 0 0;
+}
+
+.mainPromiseContainer {
+  background: #fff;
+  display: flex;
+  margin-top: 50px;
+  border: 1px solid #cccccc87;
+}
+
+.mainPromiseContainer div {
+  flex: 1;
+  border: 1px solid #cccccc87;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.mainPromiseContainer div img {
+  width: 112px;
+  height: 86px;
+}
+
+.mainPromiseContainer div h5 {
+  text-transform: uppercase;
+  color: #444;
+  font-weight: lighter;
+  page-break-after: 30px 30px 0;
+  text-align: center;
+  line-height: 23px;
+}
+
+.mainPromiseContainer div p {
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 20px;
+}
+/*we promise block ends here*/
+/*awardsAndRecognition block starts here*/
+#awardsAndRecognition {
+  display: block;
+  background: #fff;
+  margin: 30px 0px;
+  border: 1px solid #cccccc87;
+  height: 430px;
+}
+
+#awardsAndRecognition header {
+  margin: 40px 0 100px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  color: #4a4a4a;
+}
+
+.mainAwardsAndRecognition {
+  display: flex;
+  margin-top: -15px;
+}
+
+.mainAwardsAndRecognition div:nth-child(2) {
+  margin-top: 25px;
+}
+
+.mainAwardsAndRecognition div:nth-child(3) p {
+  margin-top: 53px;
+  margin-left: 60px;
+}
+
+.mainAwardsAndRecognition div p {
+  line-height: 25px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 14px;
+  width: 186px;
+  margin-top: 45px;
+}
+
+.mainAwardsAndRecognition div {
+  padding: 0px 94px;
+}
+/*awardsAndRecognition block ends here*/
+/*Flag css block starts here
+.globalBlockContent article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.globalBlockContent article div {
+  flex-basis: 32%;
+  background: lightblue;
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}*/
+/*OUR GLOBAL PRESENCE block starts here*/
+#globalPresence {
+  margin: 40px 0px;
+}
+
+#globalPresence h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: #4a4a4a;
+}
+.firstRowFlags,
+.secondRowFlags {
+  display: flex;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  color: #4a4a4a;
+  letter-spacing: 3px;
+  justify-content: space-around;
+}
+
+.firstRowFlags div {
+  padding: 0px 0px;
+}
+/*OUR GLOBAL PRESENCE block ends here*/
